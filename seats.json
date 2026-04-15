@@ -1,0 +1,1853 @@
+{
+  "total": 102,
+  "seats": [
+    {
+      "id": 1,
+      "name": "xxx",
+      "company": "北京信工博特智能科技有限公司",
+      "seatRaw": "沙发2排1座",
+      "rowType": "沙发",
+      "row": 2,
+      "seat": 1
+    },
+    {
+      "id": 2,
+      "name": "xxx",
+      "company": "摩博(北京)科技有限公司",
+      "seatRaw": "沙发2排2座",
+      "rowType": "沙发",
+      "row": 2,
+      "seat": 2
+    },
+    {
+      "id": 3,
+      "name": "xxx",
+      "company": "南京硅基智能科技集团股份有限公司",
+      "seatRaw": "沙发2排3座",
+      "rowType": "沙发",
+      "row": 2,
+      "seat": 3
+    },
+    {
+      "id": 4,
+      "name": "xxx",
+      "company": "南京奥看信息科技有限公司",
+      "seatRaw": "沙发2排4座",
+      "rowType": "沙发",
+      "row": 2,
+      "seat": 4
+    },
+    {
+      "id": 5,
+      "name": "xxx",
+      "company": "深圳黑湖网络科技有限公司",
+      "seatRaw": "沙发2排5座",
+      "rowType": "沙发",
+      "row": 2,
+      "seat": 5
+    },
+    {
+      "id": 6,
+      "name": "xxx",
+      "company": "北京国信新网通讯技术有限公司",
+      "seatRaw": "沙发2排6座",
+      "rowType": "沙发",
+      "row": 2,
+      "seat": 6
+    },
+    {
+      "id": 7,
+      "name": "xxx",
+      "company": "统信软件技术有限公司",
+      "seatRaw": "沙发2排7座",
+      "rowType": "沙发",
+      "row": 2,
+      "seat": 7
+    },
+    {
+      "id": 8,
+      "name": "xxx",
+      "company": "中国文物报社",
+      "seatRaw": "沙发2排8座",
+      "rowType": "沙发",
+      "row": 2,
+      "seat": 8
+    },
+    {
+      "id": 9,
+      "name": "xxx",
+      "company": "科大讯飞股份有限公司",
+      "seatRaw": "沙发2排9座",
+      "rowType": "沙发",
+      "row": 2,
+      "seat": 9
+    },
+    {
+      "id": 10,
+      "name": "xxx",
+      "company": "数字安徽",
+      "seatRaw": "沙发2排10座",
+      "rowType": "沙发",
+      "row": 2,
+      "seat": 10
+    },
+    {
+      "id": 11,
+      "name": "xxx",
+      "company": "重庆公司",
+      "seatRaw": "沙发2排11座",
+      "rowType": "沙发",
+      "row": 2,
+      "seat": 11
+    },
+    {
+      "id": 12,
+      "name": "xxx",
+      "company": "天翼电信终端有限公司",
+      "seatRaw": "沙发2排12座",
+      "rowType": "沙发",
+      "row": 2,
+      "seat": 12
+    },
+    {
+      "id": 13,
+      "name": "xxx",
+      "company": "中国共产党西双版纳傣族自治州委员会宣传部",
+      "seatRaw": "沙发2排13座",
+      "rowType": "沙发",
+      "row": 2,
+      "seat": 13
+    },
+    {
+      "id": 14,
+      "name": "xxx",
+      "company": "中国人民政治协商会议重庆市长寿区委员会",
+      "seatRaw": "沙发2排14座",
+      "rowType": "沙发",
+      "row": 2,
+      "seat": 14
+    },
+    {
+      "id": 15,
+      "name": "xxx",
+      "company": "潍柴动力股份有限公司",
+      "seatRaw": "沙发2排15座",
+      "rowType": "沙发",
+      "row": 2,
+      "seat": 15
+    },
+    {
+      "id": 16,
+      "name": "xxx",
+      "company": "山东省现代产业投资集团、山东现代大数据科技有限公司",
+      "seatRaw": "沙发2排16座",
+      "rowType": "沙发",
+      "row": 2,
+      "seat": 16
+    },
+    {
+      "id": 17,
+      "name": "xxx",
+      "company": "甘肃省电力投资集团有限责任公司",
+      "seatRaw": "沙发2排17座",
+      "rowType": "沙发",
+      "row": 2,
+      "seat": 17
+    },
+    {
+      "id": 18,
+      "name": "xxx",
+      "company": "甘肃电气装备集团有限公司",
+      "seatRaw": "沙发2排18座",
+      "rowType": "沙发",
+      "row": 2,
+      "seat": 18
+    },
+    {
+      "id": 19,
+      "name": "xxx",
+      "company": "依图",
+      "seatRaw": "沙发2排19座",
+      "rowType": "沙发",
+      "row": 2,
+      "seat": 19
+    },
+    {
+      "id": 20,
+      "name": "xxx",
+      "company": "杭州炽橙数字科技有限公司",
+      "seatRaw": "沙发2排20座",
+      "rowType": "沙发",
+      "row": 2,
+      "seat": 20
+    },
+    {
+      "id": 21,
+      "name": "xxx",
+      "company": "致远",
+      "seatRaw": "沙发2排21座",
+      "rowType": "沙发",
+      "row": 2,
+      "seat": 21
+    },
+    {
+      "id": 22,
+      "name": "xxx",
+      "company": "畅捷通",
+      "seatRaw": "沙发2排22座",
+      "rowType": "沙发",
+      "row": 2,
+      "seat": 22
+    },
+    {
+      "id": 23,
+      "name": "xxx",
+      "company": "安川首钢机器人有限公司",
+      "seatRaw": "沙发3排1座",
+      "rowType": "沙发",
+      "row": 3,
+      "seat": 1
+    },
+    {
+      "id": 24,
+      "name": "xxx",
+      "company": "苏州华兴源创科技股份有限公司",
+      "seatRaw": "沙发3排2座",
+      "rowType": "沙发",
+      "row": 3,
+      "seat": 2
+    },
+    {
+      "id": 25,
+      "name": "xxx",
+      "company": "库卡机器人（广东）有限公司",
+      "seatRaw": "沙发3排3座",
+      "rowType": "沙发",
+      "row": 3,
+      "seat": 3
+    },
+    {
+      "id": 26,
+      "name": "xxx",
+      "company": "常州微亿智造科技股份有限公司",
+      "seatRaw": "沙发3排4座",
+      "rowType": "沙发",
+      "row": 3,
+      "seat": 4
+    },
+    {
+      "id": 27,
+      "name": "xxx",
+      "company": "杭州炽橙数字科技有限公司",
+      "seatRaw": "沙发3排5座",
+      "rowType": "沙发",
+      "row": 3,
+      "seat": 5
+    },
+    {
+      "id": 28,
+      "name": "xxx",
+      "company": "帆软软件有限公司",
+      "seatRaw": "沙发3排6座",
+      "rowType": "沙发",
+      "row": 3,
+      "seat": 6
+    },
+    {
+      "id": 29,
+      "name": "xxx",
+      "company": "集团办公室",
+      "seatRaw": "沙发3排7座",
+      "rowType": "沙发",
+      "row": 3,
+      "seat": 7
+    },
+    {
+      "id": 30,
+      "name": "xxx",
+      "company": "阿网科技",
+      "seatRaw": "沙发3排8座",
+      "rowType": "沙发",
+      "row": 3,
+      "seat": 8
+    },
+    {
+      "id": 31,
+      "name": "xxx",
+      "company": "北京北辰实业集团有限责任公司",
+      "seatRaw": "沙发3排9座",
+      "rowType": "沙发",
+      "row": 3,
+      "seat": 9
+    },
+    {
+      "id": 32,
+      "name": "xxx",
+      "company": "超聚变",
+      "seatRaw": "沙发3排10座",
+      "rowType": "沙发",
+      "row": 3,
+      "seat": 10
+    },
+    {
+      "id": 33,
+      "name": "xxx",
+      "company": "烽火通信科技股份有限公司",
+      "seatRaw": "沙发3排11座",
+      "rowType": "沙发",
+      "row": 3,
+      "seat": 11
+    },
+    {
+      "id": 34,
+      "name": "xxx",
+      "company": "民政职业大学",
+      "seatRaw": "沙发3排12座",
+      "rowType": "沙发",
+      "row": 3,
+      "seat": 12
+    },
+    {
+      "id": 35,
+      "name": "xxx",
+      "company": "要客某单位",
+      "seatRaw": "沙发3排13座",
+      "rowType": "沙发",
+      "row": 3,
+      "seat": 13
+    },
+    {
+      "id": 36,
+      "name": "xxx",
+      "company": "要客某单位",
+      "seatRaw": "沙发3排14座",
+      "rowType": "沙发",
+      "row": 3,
+      "seat": 14
+    },
+    {
+      "id": 37,
+      "name": "xxx",
+      "company": "用友网络科技股份有限公司",
+      "seatRaw": "沙发3排15座",
+      "rowType": "沙发",
+      "row": 3,
+      "seat": 15
+    },
+    {
+      "id": 38,
+      "name": "xxx",
+      "company": "恒安嘉新（北京）科技股份公司",
+      "seatRaw": "沙发3排16座",
+      "rowType": "沙发",
+      "row": 3,
+      "seat": 16
+    },
+    {
+      "id": 39,
+      "name": "xxx",
+      "company": "中社社会工作发展基金会",
+      "seatRaw": "沙发3排17座",
+      "rowType": "沙发",
+      "row": 3,
+      "seat": 17
+    },
+    {
+      "id": 40,
+      "name": "xxx",
+      "company": "浪潮软件股份有限公司",
+      "seatRaw": "沙发3排18座",
+      "rowType": "沙发",
+      "row": 3,
+      "seat": 18
+    },
+    {
+      "id": 41,
+      "name": "xxx",
+      "company": "成都思维世纪科技有限责任公司",
+      "seatRaw": "沙发3排19座",
+      "rowType": "沙发",
+      "row": 3,
+      "seat": 19
+    },
+    {
+      "id": 42,
+      "name": "xxx",
+      "company": "深圳市瑞驰信息技术有限公司",
+      "seatRaw": "沙发3排20座",
+      "rowType": "沙发",
+      "row": 3,
+      "seat": 20
+    },
+    {
+      "id": 43,
+      "name": "xxx",
+      "company": "北京海泰方圆科技股份有限公司",
+      "seatRaw": "沙发3排21座",
+      "rowType": "沙发",
+      "row": 3,
+      "seat": 21
+    },
+    {
+      "id": 44,
+      "name": "xxx",
+      "company": "华为技术有限公司",
+      "seatRaw": "沙发3排22座",
+      "rowType": "沙发",
+      "row": 3,
+      "seat": 22
+    },
+    {
+      "id": 45,
+      "name": "xxx",
+      "company": "要客BG-集团政企",
+      "seatRaw": "课桌1排1座",
+      "rowType": "课桌",
+      "row": 1,
+      "seat": 1
+    },
+    {
+      "id": 46,
+      "name": "xxx",
+      "company": "文宣BG-集团政企",
+      "seatRaw": "课桌1排2座",
+      "rowType": "课桌",
+      "row": 1,
+      "seat": 2
+    },
+    {
+      "id": 47,
+      "name": "xxx",
+      "company": "交通物流BG-集团政企",
+      "seatRaw": "课桌1排3座",
+      "rowType": "课桌",
+      "row": 1,
+      "seat": 3
+    },
+    {
+      "id": 48,
+      "name": "xxx",
+      "company": "中国电信政企信息服务事业群",
+      "seatRaw": "课桌1排4座",
+      "rowType": "课桌",
+      "row": 1,
+      "seat": 4
+    },
+    {
+      "id": 49,
+      "name": "xxx",
+      "company": "中国电信政企信息服务事业群",
+      "seatRaw": "课桌1排5座",
+      "rowType": "课桌",
+      "row": 1,
+      "seat": 5
+    },
+    {
+      "id": 50,
+      "name": "xxx",
+      "company": "中国电信政企信息服务事业群",
+      "seatRaw": "课桌1排6座",
+      "rowType": "课桌",
+      "row": 1,
+      "seat": 6
+    },
+    {
+      "id": 51,
+      "name": "xxx",
+      "company": "中兴通讯股份有限公司",
+      "seatRaw": "课桌1排7座",
+      "rowType": "课桌",
+      "row": 1,
+      "seat": 7
+    },
+    {
+      "id": 52,
+      "name": "xxx",
+      "company": "中兴通讯",
+      "seatRaw": "课桌1排8座",
+      "rowType": "课桌",
+      "row": 1,
+      "seat": 8
+    },
+    {
+      "id": 53,
+      "name": "xxx",
+      "company": "央视频融媒体发展有限公司",
+      "seatRaw": "课桌1排9座",
+      "rowType": "课桌",
+      "row": 1,
+      "seat": 9
+    },
+    {
+      "id": 54,
+      "name": "xxx",
+      "company": "中建工程产业技术研究院有限公司",
+      "seatRaw": "课桌1排10座",
+      "rowType": "课桌",
+      "row": 1,
+      "seat": 10
+    },
+    {
+      "id": 55,
+      "name": "xxx",
+      "company": "宁夏回族自治区电力设计院有限公司",
+      "seatRaw": "课桌1排11座",
+      "rowType": "课桌",
+      "row": 1,
+      "seat": 11
+    },
+    {
+      "id": 56,
+      "name": "xxx",
+      "company": "宁夏回族自治区电力设计院有限公司",
+      "seatRaw": "课桌1排12座",
+      "rowType": "课桌",
+      "row": 1,
+      "seat": 12
+    },
+    {
+      "id": 57,
+      "name": "xxx",
+      "company": "东软集团股份有限公司",
+      "seatRaw": "课桌1排13座",
+      "rowType": "课桌",
+      "row": 1,
+      "seat": 13
+    },
+    {
+      "id": 58,
+      "name": "xxx",
+      "company": "软通动力信息技术（集团）股份有限公司",
+      "seatRaw": "课桌1排14座",
+      "rowType": "课桌",
+      "row": 1,
+      "seat": 14
+    },
+    {
+      "id": 59,
+      "name": "xxx",
+      "company": "北京公司",
+      "seatRaw": "课桌1排15座",
+      "rowType": "课桌",
+      "row": 1,
+      "seat": 15
+    },
+    {
+      "id": 60,
+      "name": "xxx",
+      "company": "北京公司",
+      "seatRaw": "课桌1排16座",
+      "rowType": "课桌",
+      "row": 1,
+      "seat": 16
+    },
+    {
+      "id": 61,
+      "name": "xxx",
+      "company": "河北公司",
+      "seatRaw": "课桌1排17座",
+      "rowType": "课桌",
+      "row": 1,
+      "seat": 17
+    },
+    {
+      "id": 62,
+      "name": "xxx",
+      "company": "河北公司",
+      "seatRaw": "课桌1排18座",
+      "rowType": "课桌",
+      "row": 1,
+      "seat": 18
+    },
+    {
+      "id": 63,
+      "name": "xxx",
+      "company": "辽宁公司",
+      "seatRaw": "课桌1排19座",
+      "rowType": "课桌",
+      "row": 1,
+      "seat": 19
+    },
+    {
+      "id": 64,
+      "name": "xxx",
+      "company": "中国电信集团有限公司",
+      "seatRaw": "课桌1排20座",
+      "rowType": "课桌",
+      "row": 1,
+      "seat": 20
+    },
+    {
+      "id": 65,
+      "name": "xxx",
+      "company": "工业BG-集团政企",
+      "seatRaw": "课桌2排1座",
+      "rowType": "课桌",
+      "row": 2,
+      "seat": 1
+    },
+    {
+      "id": 66,
+      "name": "xxx",
+      "company": "住建BG-集团政企",
+      "seatRaw": "课桌2排2座",
+      "rowType": "课桌",
+      "row": 2,
+      "seat": 2
+    },
+    {
+      "id": 67,
+      "name": "xxx",
+      "company": "总裁",
+      "seatRaw": "课桌2排3座",
+      "rowType": "课桌",
+      "row": 2,
+      "seat": 3
+    },
+    {
+      "id": 68,
+      "name": "xxx",
+      "company": "总裁",
+      "seatRaw": "课桌2排4座",
+      "rowType": "课桌",
+      "row": 2,
+      "seat": 4
+    },
+    {
+      "id": 69,
+      "name": "xxx",
+      "company": "应急BG-集团政企",
+      "seatRaw": "课桌2排5座",
+      "rowType": "课桌",
+      "row": 2,
+      "seat": 5
+    },
+    {
+      "id": 70,
+      "name": "xxx",
+      "company": "天翼云科技有限公司",
+      "seatRaw": "课桌2排6座",
+      "rowType": "课桌",
+      "row": 2,
+      "seat": 6
+    },
+    {
+      "id": 71,
+      "name": "xxx",
+      "company": "湖南湘江数盈科技发展有限公司",
+      "seatRaw": "课桌2排7座",
+      "rowType": "课桌",
+      "row": 2,
+      "seat": 7
+    },
+    {
+      "id": 72,
+      "name": "xxx",
+      "company": "白银有色集团股份有限公司",
+      "seatRaw": "课桌2排8座",
+      "rowType": "课桌",
+      "row": 2,
+      "seat": 8
+    },
+    {
+      "id": 73,
+      "name": "xxx",
+      "company": "通威股份有限公司",
+      "seatRaw": "课桌2排9座",
+      "rowType": "课桌",
+      "row": 2,
+      "seat": 9
+    },
+    {
+      "id": 74,
+      "name": "xxx",
+      "company": "超聚变",
+      "seatRaw": "课桌2排10座",
+      "rowType": "课桌",
+      "row": 2,
+      "seat": 10
+    },
+    {
+      "id": 75,
+      "name": "xxx",
+      "company": "浙江省国际贸易集团有限公司",
+      "seatRaw": "课桌2排11座",
+      "rowType": "课桌",
+      "row": 2,
+      "seat": 11
+    },
+    {
+      "id": 76,
+      "name": "xxx",
+      "company": "兰州兰石集团有限公司",
+      "seatRaw": "课桌2排12座",
+      "rowType": "课桌",
+      "row": 2,
+      "seat": 12
+    },
+    {
+      "id": 77,
+      "name": "xxx",
+      "company": "浩鲸云计算科技股份有限公司",
+      "seatRaw": "课桌2排13座",
+      "rowType": "课桌",
+      "row": 2,
+      "seat": 13
+    },
+    {
+      "id": 78,
+      "name": "xxx",
+      "company": "瑞斯康达公司",
+      "seatRaw": "课桌2排14座",
+      "rowType": "课桌",
+      "row": 2,
+      "seat": 14
+    },
+    {
+      "id": 79,
+      "name": "xxx",
+      "company": "黑龙江公司",
+      "seatRaw": "课桌2排15座",
+      "rowType": "课桌",
+      "row": 2,
+      "seat": 15
+    },
+    {
+      "id": 80,
+      "name": "xxx",
+      "company": "黑龙江公司",
+      "seatRaw": "课桌2排16座",
+      "rowType": "课桌",
+      "row": 2,
+      "seat": 16
+    },
+    {
+      "id": 81,
+      "name": "xxx",
+      "company": "安徽公司",
+      "seatRaw": "课桌2排17座",
+      "rowType": "课桌",
+      "row": 2,
+      "seat": 17
+    },
+    {
+      "id": 82,
+      "name": "xxx",
+      "company": "江西公司",
+      "seatRaw": "课桌2排18座",
+      "rowType": "课桌",
+      "row": 2,
+      "seat": 18
+    },
+    {
+      "id": 83,
+      "name": "xxx",
+      "company": "河南公司",
+      "seatRaw": "课桌2排19座",
+      "rowType": "课桌",
+      "row": 2,
+      "seat": 19
+    },
+    {
+      "id": 84,
+      "name": "xxx",
+      "company": "河南公司",
+      "seatRaw": "课桌2排20座",
+      "rowType": "课桌",
+      "row": 2,
+      "seat": 20
+    },
+    {
+      "id": 85,
+      "name": "xxx",
+      "company": "媒体",
+      "seatRaw": "课桌3排1座",
+      "rowType": "课桌",
+      "row": 3,
+      "seat": 1
+    },
+    {
+      "id": 86,
+      "name": "xxx",
+      "company": "媒体",
+      "seatRaw": "课桌3排2座",
+      "rowType": "课桌",
+      "row": 3,
+      "seat": 2
+    },
+    {
+      "id": 87,
+      "name": "xxx",
+      "company": "副总裁",
+      "seatRaw": "课桌3排3座",
+      "rowType": "课桌",
+      "row": 3,
+      "seat": 3
+    },
+    {
+      "id": 88,
+      "name": "xxx",
+      "company": "车联网",
+      "seatRaw": "课桌3排4座",
+      "rowType": "课桌",
+      "row": 3,
+      "seat": 4
+    },
+    {
+      "id": 89,
+      "name": "xxx",
+      "company": "能源化工",
+      "seatRaw": "课桌3排5座",
+      "rowType": "课桌",
+      "row": 3,
+      "seat": 5
+    },
+    {
+      "id": 90,
+      "name": "xxx",
+      "company": "总裁",
+      "seatRaw": "课桌3排6座",
+      "rowType": "课桌",
+      "row": 3,
+      "seat": 6
+    },
+    {
+      "id": 91,
+      "name": "重要嘉宾（备用）",
+      "company": "重要嘉宾（备用）",
+      "seatRaw": "课桌3排7座",
+      "rowType": "课桌",
+      "row": 3,
+      "seat": 7
+    },
+    {
+      "id": 92,
+      "name": "重要嘉宾（备用）",
+      "company": "重要嘉宾（备用）",
+      "seatRaw": "课桌3排8座",
+      "rowType": "课桌",
+      "row": 3,
+      "seat": 8
+    },
+    {
+      "id": 93,
+      "name": "重要嘉宾（备用）",
+      "company": "重要嘉宾（备用）",
+      "seatRaw": "课桌3排13座",
+      "rowType": "课桌",
+      "row": 3,
+      "seat": 13
+    },
+    {
+      "id": 94,
+      "name": "重要嘉宾（备用）",
+      "company": "重要嘉宾（备用）",
+      "seatRaw": "课桌3排14座",
+      "rowType": "课桌",
+      "row": 3,
+      "seat": 14
+    },
+    {
+      "id": 95,
+      "name": "媒体",
+      "company": "媒体",
+      "seatRaw": "课桌4排1座",
+      "rowType": "课桌",
+      "row": 4,
+      "seat": 1
+    },
+    {
+      "id": 96,
+      "name": "媒体",
+      "company": "媒体",
+      "seatRaw": "课桌4排2座",
+      "rowType": "课桌",
+      "row": 4,
+      "seat": 2
+    },
+    {
+      "id": 97,
+      "name": "媒体",
+      "company": "媒体",
+      "seatRaw": "课桌4排3座",
+      "rowType": "课桌",
+      "row": 4,
+      "seat": 3
+    },
+    {
+      "id": 98,
+      "name": "媒体",
+      "company": "媒体",
+      "seatRaw": "课桌4排4座",
+      "rowType": "课桌",
+      "row": 4,
+      "seat": 4
+    },
+    {
+      "id": 99,
+      "name": "媒体",
+      "company": "媒体",
+      "seatRaw": "课桌4排5座",
+      "rowType": "课桌",
+      "row": 4,
+      "seat": 5
+    },
+    {
+      "id": 100,
+      "name": "媒体",
+      "company": "媒体",
+      "seatRaw": "课桌4排6座",
+      "rowType": "课桌",
+      "row": 4,
+      "seat": 6
+    },
+    {
+      "id": 101,
+      "name": "白冰",
+      "company": "宁夏公司",
+      "seatRaw": "课桌4排15座",
+      "rowType": "课桌",
+      "row": 4,
+      "seat": 15
+    },
+    {
+      "id": 102,
+      "name": "梁鹏",
+      "company": "新疆公司",
+      "seatRaw": "课桌4排16座",
+      "rowType": "课桌",
+      "row": 4,
+      "seat": 16
+    }
+  ],
+  "nameIndex": {
+    "xxx": [
+      {
+        "id": 1,
+        "name": "xxx",
+        "company": "北京信工博特智能科技有限公司",
+        "seatRaw": "沙发2排1座",
+        "rowType": "沙发",
+        "row": 2,
+        "seat": 1
+      },
+      {
+        "id": 2,
+        "name": "xxx",
+        "company": "摩博(北京)科技有限公司",
+        "seatRaw": "沙发2排2座",
+        "rowType": "沙发",
+        "row": 2,
+        "seat": 2
+      },
+      {
+        "id": 3,
+        "name": "xxx",
+        "company": "南京硅基智能科技集团股份有限公司",
+        "seatRaw": "沙发2排3座",
+        "rowType": "沙发",
+        "row": 2,
+        "seat": 3
+      },
+      {
+        "id": 4,
+        "name": "xxx",
+        "company": "南京奥看信息科技有限公司",
+        "seatRaw": "沙发2排4座",
+        "rowType": "沙发",
+        "row": 2,
+        "seat": 4
+      },
+      {
+        "id": 5,
+        "name": "xxx",
+        "company": "深圳黑湖网络科技有限公司",
+        "seatRaw": "沙发2排5座",
+        "rowType": "沙发",
+        "row": 2,
+        "seat": 5
+      },
+      {
+        "id": 6,
+        "name": "xxx",
+        "company": "北京国信新网通讯技术有限公司",
+        "seatRaw": "沙发2排6座",
+        "rowType": "沙发",
+        "row": 2,
+        "seat": 6
+      },
+      {
+        "id": 7,
+        "name": "xxx",
+        "company": "统信软件技术有限公司",
+        "seatRaw": "沙发2排7座",
+        "rowType": "沙发",
+        "row": 2,
+        "seat": 7
+      },
+      {
+        "id": 8,
+        "name": "xxx",
+        "company": "中国文物报社",
+        "seatRaw": "沙发2排8座",
+        "rowType": "沙发",
+        "row": 2,
+        "seat": 8
+      },
+      {
+        "id": 9,
+        "name": "xxx",
+        "company": "科大讯飞股份有限公司",
+        "seatRaw": "沙发2排9座",
+        "rowType": "沙发",
+        "row": 2,
+        "seat": 9
+      },
+      {
+        "id": 10,
+        "name": "xxx",
+        "company": "数字安徽",
+        "seatRaw": "沙发2排10座",
+        "rowType": "沙发",
+        "row": 2,
+        "seat": 10
+      },
+      {
+        "id": 11,
+        "name": "xxx",
+        "company": "重庆公司",
+        "seatRaw": "沙发2排11座",
+        "rowType": "沙发",
+        "row": 2,
+        "seat": 11
+      },
+      {
+        "id": 12,
+        "name": "xxx",
+        "company": "天翼电信终端有限公司",
+        "seatRaw": "沙发2排12座",
+        "rowType": "沙发",
+        "row": 2,
+        "seat": 12
+      },
+      {
+        "id": 13,
+        "name": "xxx",
+        "company": "中国共产党西双版纳傣族自治州委员会宣传部",
+        "seatRaw": "沙发2排13座",
+        "rowType": "沙发",
+        "row": 2,
+        "seat": 13
+      },
+      {
+        "id": 14,
+        "name": "xxx",
+        "company": "中国人民政治协商会议重庆市长寿区委员会",
+        "seatRaw": "沙发2排14座",
+        "rowType": "沙发",
+        "row": 2,
+        "seat": 14
+      },
+      {
+        "id": 15,
+        "name": "xxx",
+        "company": "潍柴动力股份有限公司",
+        "seatRaw": "沙发2排15座",
+        "rowType": "沙发",
+        "row": 2,
+        "seat": 15
+      },
+      {
+        "id": 16,
+        "name": "xxx",
+        "company": "山东省现代产业投资集团、山东现代大数据科技有限公司",
+        "seatRaw": "沙发2排16座",
+        "rowType": "沙发",
+        "row": 2,
+        "seat": 16
+      },
+      {
+        "id": 17,
+        "name": "xxx",
+        "company": "甘肃省电力投资集团有限责任公司",
+        "seatRaw": "沙发2排17座",
+        "rowType": "沙发",
+        "row": 2,
+        "seat": 17
+      },
+      {
+        "id": 18,
+        "name": "xxx",
+        "company": "甘肃电气装备集团有限公司",
+        "seatRaw": "沙发2排18座",
+        "rowType": "沙发",
+        "row": 2,
+        "seat": 18
+      },
+      {
+        "id": 19,
+        "name": "xxx",
+        "company": "依图",
+        "seatRaw": "沙发2排19座",
+        "rowType": "沙发",
+        "row": 2,
+        "seat": 19
+      },
+      {
+        "id": 20,
+        "name": "xxx",
+        "company": "杭州炽橙数字科技有限公司",
+        "seatRaw": "沙发2排20座",
+        "rowType": "沙发",
+        "row": 2,
+        "seat": 20
+      },
+      {
+        "id": 21,
+        "name": "xxx",
+        "company": "致远",
+        "seatRaw": "沙发2排21座",
+        "rowType": "沙发",
+        "row": 2,
+        "seat": 21
+      },
+      {
+        "id": 22,
+        "name": "xxx",
+        "company": "畅捷通",
+        "seatRaw": "沙发2排22座",
+        "rowType": "沙发",
+        "row": 2,
+        "seat": 22
+      },
+      {
+        "id": 23,
+        "name": "xxx",
+        "company": "安川首钢机器人有限公司",
+        "seatRaw": "沙发3排1座",
+        "rowType": "沙发",
+        "row": 3,
+        "seat": 1
+      },
+      {
+        "id": 24,
+        "name": "xxx",
+        "company": "苏州华兴源创科技股份有限公司",
+        "seatRaw": "沙发3排2座",
+        "rowType": "沙发",
+        "row": 3,
+        "seat": 2
+      },
+      {
+        "id": 25,
+        "name": "xxx",
+        "company": "库卡机器人（广东）有限公司",
+        "seatRaw": "沙发3排3座",
+        "rowType": "沙发",
+        "row": 3,
+        "seat": 3
+      },
+      {
+        "id": 26,
+        "name": "xxx",
+        "company": "常州微亿智造科技股份有限公司",
+        "seatRaw": "沙发3排4座",
+        "rowType": "沙发",
+        "row": 3,
+        "seat": 4
+      },
+      {
+        "id": 27,
+        "name": "xxx",
+        "company": "杭州炽橙数字科技有限公司",
+        "seatRaw": "沙发3排5座",
+        "rowType": "沙发",
+        "row": 3,
+        "seat": 5
+      },
+      {
+        "id": 28,
+        "name": "xxx",
+        "company": "帆软软件有限公司",
+        "seatRaw": "沙发3排6座",
+        "rowType": "沙发",
+        "row": 3,
+        "seat": 6
+      },
+      {
+        "id": 29,
+        "name": "xxx",
+        "company": "集团办公室",
+        "seatRaw": "沙发3排7座",
+        "rowType": "沙发",
+        "row": 3,
+        "seat": 7
+      },
+      {
+        "id": 30,
+        "name": "xxx",
+        "company": "阿网科技",
+        "seatRaw": "沙发3排8座",
+        "rowType": "沙发",
+        "row": 3,
+        "seat": 8
+      },
+      {
+        "id": 31,
+        "name": "xxx",
+        "company": "北京北辰实业集团有限责任公司",
+        "seatRaw": "沙发3排9座",
+        "rowType": "沙发",
+        "row": 3,
+        "seat": 9
+      },
+      {
+        "id": 32,
+        "name": "xxx",
+        "company": "超聚变",
+        "seatRaw": "沙发3排10座",
+        "rowType": "沙发",
+        "row": 3,
+        "seat": 10
+      },
+      {
+        "id": 33,
+        "name": "xxx",
+        "company": "烽火通信科技股份有限公司",
+        "seatRaw": "沙发3排11座",
+        "rowType": "沙发",
+        "row": 3,
+        "seat": 11
+      },
+      {
+        "id": 34,
+        "name": "xxx",
+        "company": "民政职业大学",
+        "seatRaw": "沙发3排12座",
+        "rowType": "沙发",
+        "row": 3,
+        "seat": 12
+      },
+      {
+        "id": 35,
+        "name": "xxx",
+        "company": "要客某单位",
+        "seatRaw": "沙发3排13座",
+        "rowType": "沙发",
+        "row": 3,
+        "seat": 13
+      },
+      {
+        "id": 36,
+        "name": "xxx",
+        "company": "要客某单位",
+        "seatRaw": "沙发3排14座",
+        "rowType": "沙发",
+        "row": 3,
+        "seat": 14
+      },
+      {
+        "id": 37,
+        "name": "xxx",
+        "company": "用友网络科技股份有限公司",
+        "seatRaw": "沙发3排15座",
+        "rowType": "沙发",
+        "row": 3,
+        "seat": 15
+      },
+      {
+        "id": 38,
+        "name": "xxx",
+        "company": "恒安嘉新（北京）科技股份公司",
+        "seatRaw": "沙发3排16座",
+        "rowType": "沙发",
+        "row": 3,
+        "seat": 16
+      },
+      {
+        "id": 39,
+        "name": "xxx",
+        "company": "中社社会工作发展基金会",
+        "seatRaw": "沙发3排17座",
+        "rowType": "沙发",
+        "row": 3,
+        "seat": 17
+      },
+      {
+        "id": 40,
+        "name": "xxx",
+        "company": "浪潮软件股份有限公司",
+        "seatRaw": "沙发3排18座",
+        "rowType": "沙发",
+        "row": 3,
+        "seat": 18
+      },
+      {
+        "id": 41,
+        "name": "xxx",
+        "company": "成都思维世纪科技有限责任公司",
+        "seatRaw": "沙发3排19座",
+        "rowType": "沙发",
+        "row": 3,
+        "seat": 19
+      },
+      {
+        "id": 42,
+        "name": "xxx",
+        "company": "深圳市瑞驰信息技术有限公司",
+        "seatRaw": "沙发3排20座",
+        "rowType": "沙发",
+        "row": 3,
+        "seat": 20
+      },
+      {
+        "id": 43,
+        "name": "xxx",
+        "company": "北京海泰方圆科技股份有限公司",
+        "seatRaw": "沙发3排21座",
+        "rowType": "沙发",
+        "row": 3,
+        "seat": 21
+      },
+      {
+        "id": 44,
+        "name": "xxx",
+        "company": "华为技术有限公司",
+        "seatRaw": "沙发3排22座",
+        "rowType": "沙发",
+        "row": 3,
+        "seat": 22
+      },
+      {
+        "id": 45,
+        "name": "xxx",
+        "company": "要客BG-集团政企",
+        "seatRaw": "课桌1排1座",
+        "rowType": "课桌",
+        "row": 1,
+        "seat": 1
+      },
+      {
+        "id": 46,
+        "name": "xxx",
+        "company": "文宣BG-集团政企",
+        "seatRaw": "课桌1排2座",
+        "rowType": "课桌",
+        "row": 1,
+        "seat": 2
+      },
+      {
+        "id": 47,
+        "name": "xxx",
+        "company": "交通物流BG-集团政企",
+        "seatRaw": "课桌1排3座",
+        "rowType": "课桌",
+        "row": 1,
+        "seat": 3
+      },
+      {
+        "id": 48,
+        "name": "xxx",
+        "company": "中国电信政企信息服务事业群",
+        "seatRaw": "课桌1排4座",
+        "rowType": "课桌",
+        "row": 1,
+        "seat": 4
+      },
+      {
+        "id": 49,
+        "name": "xxx",
+        "company": "中国电信政企信息服务事业群",
+        "seatRaw": "课桌1排5座",
+        "rowType": "课桌",
+        "row": 1,
+        "seat": 5
+      },
+      {
+        "id": 50,
+        "name": "xxx",
+        "company": "中国电信政企信息服务事业群",
+        "seatRaw": "课桌1排6座",
+        "rowType": "课桌",
+        "row": 1,
+        "seat": 6
+      },
+      {
+        "id": 51,
+        "name": "xxx",
+        "company": "中兴通讯股份有限公司",
+        "seatRaw": "课桌1排7座",
+        "rowType": "课桌",
+        "row": 1,
+        "seat": 7
+      },
+      {
+        "id": 52,
+        "name": "xxx",
+        "company": "中兴通讯",
+        "seatRaw": "课桌1排8座",
+        "rowType": "课桌",
+        "row": 1,
+        "seat": 8
+      },
+      {
+        "id": 53,
+        "name": "xxx",
+        "company": "央视频融媒体发展有限公司",
+        "seatRaw": "课桌1排9座",
+        "rowType": "课桌",
+        "row": 1,
+        "seat": 9
+      },
+      {
+        "id": 54,
+        "name": "xxx",
+        "company": "中建工程产业技术研究院有限公司",
+        "seatRaw": "课桌1排10座",
+        "rowType": "课桌",
+        "row": 1,
+        "seat": 10
+      },
+      {
+        "id": 55,
+        "name": "xxx",
+        "company": "宁夏回族自治区电力设计院有限公司",
+        "seatRaw": "课桌1排11座",
+        "rowType": "课桌",
+        "row": 1,
+        "seat": 11
+      },
+      {
+        "id": 56,
+        "name": "xxx",
+        "company": "宁夏回族自治区电力设计院有限公司",
+        "seatRaw": "课桌1排12座",
+        "rowType": "课桌",
+        "row": 1,
+        "seat": 12
+      },
+      {
+        "id": 57,
+        "name": "xxx",
+        "company": "东软集团股份有限公司",
+        "seatRaw": "课桌1排13座",
+        "rowType": "课桌",
+        "row": 1,
+        "seat": 13
+      },
+      {
+        "id": 58,
+        "name": "xxx",
+        "company": "软通动力信息技术（集团）股份有限公司",
+        "seatRaw": "课桌1排14座",
+        "rowType": "课桌",
+        "row": 1,
+        "seat": 14
+      },
+      {
+        "id": 59,
+        "name": "xxx",
+        "company": "北京公司",
+        "seatRaw": "课桌1排15座",
+        "rowType": "课桌",
+        "row": 1,
+        "seat": 15
+      },
+      {
+        "id": 60,
+        "name": "xxx",
+        "company": "北京公司",
+        "seatRaw": "课桌1排16座",
+        "rowType": "课桌",
+        "row": 1,
+        "seat": 16
+      },
+      {
+        "id": 61,
+        "name": "xxx",
+        "company": "河北公司",
+        "seatRaw": "课桌1排17座",
+        "rowType": "课桌",
+        "row": 1,
+        "seat": 17
+      },
+      {
+        "id": 62,
+        "name": "xxx",
+        "company": "河北公司",
+        "seatRaw": "课桌1排18座",
+        "rowType": "课桌",
+        "row": 1,
+        "seat": 18
+      },
+      {
+        "id": 63,
+        "name": "xxx",
+        "company": "辽宁公司",
+        "seatRaw": "课桌1排19座",
+        "rowType": "课桌",
+        "row": 1,
+        "seat": 19
+      },
+      {
+        "id": 64,
+        "name": "xxx",
+        "company": "中国电信集团有限公司",
+        "seatRaw": "课桌1排20座",
+        "rowType": "课桌",
+        "row": 1,
+        "seat": 20
+      },
+      {
+        "id": 65,
+        "name": "xxx",
+        "company": "工业BG-集团政企",
+        "seatRaw": "课桌2排1座",
+        "rowType": "课桌",
+        "row": 2,
+        "seat": 1
+      },
+      {
+        "id": 66,
+        "name": "xxx",
+        "company": "住建BG-集团政企",
+        "seatRaw": "课桌2排2座",
+        "rowType": "课桌",
+        "row": 2,
+        "seat": 2
+      },
+      {
+        "id": 67,
+        "name": "xxx",
+        "company": "总裁",
+        "seatRaw": "课桌2排3座",
+        "rowType": "课桌",
+        "row": 2,
+        "seat": 3
+      },
+      {
+        "id": 68,
+        "name": "xxx",
+        "company": "总裁",
+        "seatRaw": "课桌2排4座",
+        "rowType": "课桌",
+        "row": 2,
+        "seat": 4
+      },
+      {
+        "id": 69,
+        "name": "xxx",
+        "company": "应急BG-集团政企",
+        "seatRaw": "课桌2排5座",
+        "rowType": "课桌",
+        "row": 2,
+        "seat": 5
+      },
+      {
+        "id": 70,
+        "name": "xxx",
+        "company": "天翼云科技有限公司",
+        "seatRaw": "课桌2排6座",
+        "rowType": "课桌",
+        "row": 2,
+        "seat": 6
+      },
+      {
+        "id": 71,
+        "name": "xxx",
+        "company": "湖南湘江数盈科技发展有限公司",
+        "seatRaw": "课桌2排7座",
+        "rowType": "课桌",
+        "row": 2,
+        "seat": 7
+      },
+      {
+        "id": 72,
+        "name": "xxx",
+        "company": "白银有色集团股份有限公司",
+        "seatRaw": "课桌2排8座",
+        "rowType": "课桌",
+        "row": 2,
+        "seat": 8
+      },
+      {
+        "id": 73,
+        "name": "xxx",
+        "company": "通威股份有限公司",
+        "seatRaw": "课桌2排9座",
+        "rowType": "课桌",
+        "row": 2,
+        "seat": 9
+      },
+      {
+        "id": 74,
+        "name": "xxx",
+        "company": "超聚变",
+        "seatRaw": "课桌2排10座",
+        "rowType": "课桌",
+        "row": 2,
+        "seat": 10
+      },
+      {
+        "id": 75,
+        "name": "xxx",
+        "company": "浙江省国际贸易集团有限公司",
+        "seatRaw": "课桌2排11座",
+        "rowType": "课桌",
+        "row": 2,
+        "seat": 11
+      },
+      {
+        "id": 76,
+        "name": "xxx",
+        "company": "兰州兰石集团有限公司",
+        "seatRaw": "课桌2排12座",
+        "rowType": "课桌",
+        "row": 2,
+        "seat": 12
+      },
+      {
+        "id": 77,
+        "name": "xxx",
+        "company": "浩鲸云计算科技股份有限公司",
+        "seatRaw": "课桌2排13座",
+        "rowType": "课桌",
+        "row": 2,
+        "seat": 13
+      },
+      {
+        "id": 78,
+        "name": "xxx",
+        "company": "瑞斯康达公司",
+        "seatRaw": "课桌2排14座",
+        "rowType": "课桌",
+        "row": 2,
+        "seat": 14
+      },
+      {
+        "id": 79,
+        "name": "xxx",
+        "company": "黑龙江公司",
+        "seatRaw": "课桌2排15座",
+        "rowType": "课桌",
+        "row": 2,
+        "seat": 15
+      },
+      {
+        "id": 80,
+        "name": "xxx",
+        "company": "黑龙江公司",
+        "seatRaw": "课桌2排16座",
+        "rowType": "课桌",
+        "row": 2,
+        "seat": 16
+      },
+      {
+        "id": 81,
+        "name": "xxx",
+        "company": "安徽公司",
+        "seatRaw": "课桌2排17座",
+        "rowType": "课桌",
+        "row": 2,
+        "seat": 17
+      },
+      {
+        "id": 82,
+        "name": "xxx",
+        "company": "江西公司",
+        "seatRaw": "课桌2排18座",
+        "rowType": "课桌",
+        "row": 2,
+        "seat": 18
+      },
+      {
+        "id": 83,
+        "name": "xxx",
+        "company": "河南公司",
+        "seatRaw": "课桌2排19座",
+        "rowType": "课桌",
+        "row": 2,
+        "seat": 19
+      },
+      {
+        "id": 84,
+        "name": "xxx",
+        "company": "河南公司",
+        "seatRaw": "课桌2排20座",
+        "rowType": "课桌",
+        "row": 2,
+        "seat": 20
+      },
+      {
+        "id": 85,
+        "name": "xxx",
+        "company": "媒体",
+        "seatRaw": "课桌3排1座",
+        "rowType": "课桌",
+        "row": 3,
+        "seat": 1
+      },
+      {
+        "id": 86,
+        "name": "xxx",
+        "company": "媒体",
+        "seatRaw": "课桌3排2座",
+        "rowType": "课桌",
+        "row": 3,
+        "seat": 2
+      },
+      {
+        "id": 87,
+        "name": "xxx",
+        "company": "副总裁",
+        "seatRaw": "课桌3排3座",
+        "rowType": "课桌",
+        "row": 3,
+        "seat": 3
+      },
+      {
+        "id": 88,
+        "name": "xxx",
+        "company": "车联网",
+        "seatRaw": "课桌3排4座",
+        "rowType": "课桌",
+        "row": 3,
+        "seat": 4
+      },
+      {
+        "id": 89,
+        "name": "xxx",
+        "company": "能源化工",
+        "seatRaw": "课桌3排5座",
+        "rowType": "课桌",
+        "row": 3,
+        "seat": 5
+      },
+      {
+        "id": 90,
+        "name": "xxx",
+        "company": "总裁",
+        "seatRaw": "课桌3排6座",
+        "rowType": "课桌",
+        "row": 3,
+        "seat": 6
+      }
+    ],
+    "重要嘉宾（备用）": [
+      {
+        "id": 91,
+        "name": "重要嘉宾（备用）",
+        "company": "重要嘉宾（备用）",
+        "seatRaw": "课桌3排7座",
+        "rowType": "课桌",
+        "row": 3,
+        "seat": 7
+      },
+      {
+        "id": 92,
+        "name": "重要嘉宾（备用）",
+        "company": "重要嘉宾（备用）",
+        "seatRaw": "课桌3排8座",
+        "rowType": "课桌",
+        "row": 3,
+        "seat": 8
+      },
+      {
+        "id": 93,
+        "name": "重要嘉宾（备用）",
+        "company": "重要嘉宾（备用）",
+        "seatRaw": "课桌3排13座",
+        "rowType": "课桌",
+        "row": 3,
+        "seat": 13
+      },
+      {
+        "id": 94,
+        "name": "重要嘉宾（备用）",
+        "company": "重要嘉宾（备用）",
+        "seatRaw": "课桌3排14座",
+        "rowType": "课桌",
+        "row": 3,
+        "seat": 14
+      }
+    ],
+    "媒体": [
+      {
+        "id": 95,
+        "name": "媒体",
+        "company": "媒体",
+        "seatRaw": "课桌4排1座",
+        "rowType": "课桌",
+        "row": 4,
+        "seat": 1
+      },
+      {
+        "id": 96,
+        "name": "媒体",
+        "company": "媒体",
+        "seatRaw": "课桌4排2座",
+        "rowType": "课桌",
+        "row": 4,
+        "seat": 2
+      },
+      {
+        "id": 97,
+        "name": "媒体",
+        "company": "媒体",
+        "seatRaw": "课桌4排3座",
+        "rowType": "课桌",
+        "row": 4,
+        "seat": 3
+      },
+      {
+        "id": 98,
+        "name": "媒体",
+        "company": "媒体",
+        "seatRaw": "课桌4排4座",
+        "rowType": "课桌",
+        "row": 4,
+        "seat": 4
+      },
+      {
+        "id": 99,
+        "name": "媒体",
+        "company": "媒体",
+        "seatRaw": "课桌4排5座",
+        "rowType": "课桌",
+        "row": 4,
+        "seat": 5
+      },
+      {
+        "id": 100,
+        "name": "媒体",
+        "company": "媒体",
+        "seatRaw": "课桌4排6座",
+        "rowType": "课桌",
+        "row": 4,
+        "seat": 6
+      }
+    ],
+    "白冰": [
+      {
+        "id": 101,
+        "name": "白冰",
+        "company": "宁夏公司",
+        "seatRaw": "课桌4排15座",
+        "rowType": "课桌",
+        "row": 4,
+        "seat": 15
+      }
+    ],
+    "梁鹏": [
+      {
+        "id": 102,
+        "name": "梁鹏",
+        "company": "新疆公司",
+        "seatRaw": "课桌4排16座",
+        "rowType": "课桌",
+        "row": 4,
+        "seat": 16
+      }
+    ]
+  }
+}
