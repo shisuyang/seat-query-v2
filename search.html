@@ -1,0 +1,322 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>座位查询</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 20px;
+        }
+        .container {
+            background: #fff;
+            border-radius: 20px;
+            box-shadow: 0 20px 60px rgba(0,0,0,0.3);
+            width: 100%;
+            max-width: 480px;
+            overflow: hidden;
+        }
+        .header {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: #fff;
+            padding: 30px 20px;
+            text-align: center;
+        }
+        .header h1 { font-size: 24px; margin-bottom: 8px; }
+        .header p { font-size: 14px; opacity: 0.9; }
+        
+        .content { padding: 30px 20px; }
+        
+        /* Step 1: Name Input */
+        .search-box { display: flex; gap: 10px; }
+        .search-box input {
+            flex: 1;
+            padding: 15px 18px;
+            font-size: 16px;
+            border: 2px solid #e0e0e0;
+            border-radius: 12px;
+            outline: none;
+            transition: border-color 0.3s;
+        }
+        .search-box input:focus { border-color: #667eea; }
+        .search-box button {
+            padding: 15px 24px;
+            font-size: 16px;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: #fff;
+            border: none;
+            border-radius: 12px;
+            cursor: pointer;
+            font-weight: 600;
+        }
+        .search-box button:active { transform: scale(0.98); }
+        
+        /* Step 2: Company Selection */
+        .company-list { display: none; }
+        .company-list h3 { 
+            text-align: center; 
+            color: #333; 
+            margin-bottom: 20px;
+            font-size: 16px;
+        }
+        .company-item {
+            display: block;
+            padding: 15px 18px;
+            margin-bottom: 10px;
+            border: 2px solid #e0e0e0;
+            border-radius: 12px;
+            cursor: pointer;
+            transition: all 0.3s;
+        }
+        .company-item:hover { 
+            border-color: #667eea; 
+            background: #f8f6ff;
+        }
+        .company-item .name { font-weight: 600; color: #333; }
+        .company-item .company { font-size: 13px; color: #888; margin-top: 4px; }
+        
+        /* Result */
+        .result { display: none; text-align: center; }
+        .result .seat-info {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: #fff;
+            padding: 30px;
+            border-radius: 16px;
+            margin-bottom: 20px;
+        }
+        .result .seat-label { font-size: 14px; opacity: 0.9; margin-bottom: 8px; }
+        .result .seat-number { font-size: 36px; font-weight: 700; }
+        .result .seat-company { 
+            margin-top: 15px; 
+            font-size: 14px; 
+            opacity: 0.85;
+            word-break: break-all;
+        }
+        .result button {
+            width: 100%;
+            padding: 15px;
+            font-size: 16px;
+            background: #fff;
+            color: #667eea;
+            border: 2px solid #667eea;
+            border-radius: 12px;
+            cursor: pointer;
+            font-weight: 600;
+            transition: all 0.3s;
+        }
+        .result button:hover { 
+            background: #667eea; 
+            color: #fff;
+        }
+        
+        /* Seat Map Modal */
+        .modal {
+            display: none;
+            position: fixed;
+            top: 0; left: 0; right: 0; bottom: 0;
+            background: rgba(0,0,0,0.8);
+            justify-content: center;
+            align-items: center;
+            z-index: 1000;
+            padding: 20px;
+        }
+        .modal.active { display: flex; }
+        .modal-content {
+            background: #fff;
+            border-radius: 16px;
+            max-width: 600px;
+            width: 100%;
+            max-height: 90vh;
+            overflow: auto;
+        }
+        .modal-header {
+            padding: 15px 20px;
+            border-bottom: 1px solid #eee;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .modal-header h3 { color: #333; }
+        .modal-close {
+            width: 32px; height: 32px;
+            border: none;
+            background: #f0f0f0;
+            border-radius: 50%;
+            cursor: pointer;
+            font-size: 18px;
+        }
+        .modal-body { padding: 20px; }
+        .modal-body img {
+            width: 100%;
+            height: auto;
+            border-radius: 8px;
+        }
+        
+        .back-btn {
+            display: inline-block;
+            padding: 10px 20px;
+            color: #667eea;
+            text-decoration: none;
+            font-size: 14px;
+            margin-bottom: 15px;
+            cursor: pointer;
+        }
+        .back-btn:hover { text-decoration: underline; }
+        
+        .error {
+            text-align: center;
+            color: #e74c3c;
+            padding: 20px;
+            display: none;
+        }
+        .error.show { display: block; }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>🪑 座位查询</h1>
+            <p>输入您的姓名即可查询座位</p>
+        </div>
+        
+        <div class="content">
+            <!-- Step 1: Name Input -->
+            <div class="search-box" id="step1">
+                <input type="text" id="nameInput" placeholder="请输入您的姓名" autocomplete="off">
+                <button onclick="searchByName()">查询</button>
+            </div>
+            
+            <!-- Step 2: Company Selection (for duplicates) -->
+            <div class="company-list" id="step2">
+                <span class="back-btn" onclick="goBack()">← 重新查询</span>
+                <h3>找到多位同名嘉宾，请选择您的公司</h3>
+                <div id="companyList"></div>
+            </div>
+            
+            <!-- Error -->
+            <div class="error" id="error">
+                <p>未找到匹配的嘉宾信息</p>
+                <p style="font-size:13px;margin-top:8px;color:#888;">请确认姓名输入正确</p>
+            </div>
+            
+            <!-- Result -->
+            <div class="result" id="result">
+                <span class="back-btn" onclick="goBack()">← 重新查询</span>
+                <div class="seat-info">
+                    <div class="seat-label">您的座位是</div>
+                    <div class="seat-number" id="seatNumber">-</div>
+                    <div class="seat-company" id="seatCompany"></div>
+                </div>
+                <button onclick="showMap()">📍 查看座位图</button>
+            </div>
+        </div>
+    </div>
+    
+    <!-- Seat Map Modal -->
+    <div class="modal" id="mapModal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h3>座位图</h3>
+                <button class="modal-close" onclick="closeMap()">×</button>
+            </div>
+            <div class="modal-body">
+                <img id="seatMapImg" src="" alt="座位图">
+            </div>
+        </div>
+    </div>
+
+    <script>
+        let seatsData = [];
+        
+        // Load data on page load
+        fetch('seats.json')
+            .then(r => r.json())
+            .then(d => seatsData = d.seats)
+            .catch(e => console.error('Failed to load seats.json', e));
+        
+        const nameInput = document.getElementById('nameInput');
+        
+        // Enter key support
+        nameInput.addEventListener('keypress', e => {
+            if (e.key === 'Enter') searchByName();
+        });
+        
+        function searchByName() {
+            const name = nameInput.value.trim();
+            if (!name) return;
+            
+            const matches = seatsData.filter(s => s.name === name);
+            
+            hideAll();
+            
+            if (matches.length === 0) {
+                document.getElementById('error').classList.add('show');
+            } else if (matches.length === 1) {
+                showResult(matches[0]);
+            } else {
+                showCompanySelection(matches);
+            }
+        }
+        
+        function showCompanySelection(matches) {
+            const container = document.getElementById('companyList');
+            container.innerHTML = '';
+            
+            matches.forEach(seat => {
+                const div = document.createElement('div');
+                div.className = 'company-item';
+                div.innerHTML = `
+                    <div class="name">${seat.name}</div>
+                    <div class="company">${seat.company}</div>
+                `;
+                div.onclick = () => showResult(seat);
+                container.appendChild(div);
+            });
+            
+            document.getElementById('step2').style.display = 'block';
+        }
+        
+        function showResult(seat) {
+            document.getElementById('seatNumber').textContent = seat.seatRaw;
+            document.getElementById('seatCompany').textContent = seat.company;
+            document.getElementById('result').style.display = 'block';
+        }
+        
+        function showMap() {
+            // TODO: Replace with actual seat map image URL
+            document.getElementById('seatMapImg').src = 'seat-map.png';
+            document.getElementById('mapModal').classList.add('active');
+        }
+        
+        function closeMap() {
+            document.getElementById('mapModal').classList.remove('active');
+        }
+        
+        function goBack() {
+            hideAll();
+            document.getElementById('step1').style.display = 'flex';
+            nameInput.value = '';
+            nameInput.focus();
+        }
+        
+        function hideAll() {
+            document.getElementById('step1').style.display = 'none';
+            document.getElementById('step2').style.display = 'none';
+            document.getElementById('error').classList.remove('show');
+            document.getElementById('result').style.display = 'none';
+        }
+        
+        // Click outside modal to close
+        document.getElementById('mapModal').addEventListener('click', e => {
+            if (e.target.id === 'mapModal') closeMap();
+        });
+    </script>
+</body>
+</html>
