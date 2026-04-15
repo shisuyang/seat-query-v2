@@ -1,0 +1,650 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>座位管理</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            background: #f5f5f5;
+            min-height: 100vh;
+            padding: 20px;
+        }
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+        }
+        h1 {
+            text-align: center;
+            color: #333;
+            margin-bottom: 20px;
+            font-size: 22px;
+        }
+        
+        .card {
+            background: #fff;
+            border-radius: 16px;
+            padding: 24px;
+            box-shadow: 0 2px 12px rgba(0,0,0,0.1);
+            margin-bottom: 20px;
+        }
+        .card-title {
+            font-size: 16px;
+            color: #667eea;
+            margin-bottom: 16px;
+            font-weight: 600;
+        }
+        
+        .form-group {
+            margin-bottom: 12px;
+        }
+        .form-group label {
+            display: block;
+            font-size: 13px;
+            color: #666;
+            margin-bottom: 4px;
+        }
+        .form-group input, .form-group select {
+            width: 100%;
+            padding: 10px 12px;
+            font-size: 14px;
+            border: 2px solid #e0e0e0;
+            border-radius: 8px;
+            outline: none;
+            transition: border-color 0.3s;
+        }
+        .form-group input:focus, .form-group select:focus {
+            border-color: #667eea;
+        }
+        
+        .form-row {
+            display: flex;
+            gap: 10px;
+        }
+        .form-row .form-group {
+            flex: 1;
+        }
+        
+        .btn-row {
+            display: flex;
+            gap: 10px;
+            margin-top: 16px;
+        }
+        .btn {
+            flex: 1;
+            padding: 12px;
+            font-size: 14px;
+            border: none;
+            border-radius: 8px;
+            cursor: pointer;
+            font-weight: 600;
+        }
+        .btn-primary {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: #fff;
+        }
+        .btn-secondary {
+            background: #f0f0f0;
+            color: #666;
+        }
+        .btn-danger {
+            background: #e74c3c;
+            color: #fff;
+        }
+        .btn:active { transform: scale(0.98); }
+        
+        /* File upload */
+        .upload-area {
+            border: 2px dashed #ccc;
+            border-radius: 12px;
+            padding: 24px;
+            text-align: center;
+            cursor: pointer;
+            transition: all 0.3s;
+        }
+        .upload-area:hover { border-color: #667eea; background: #f8f6ff; }
+        .upload-area input { display: none; }
+        .upload-icon { font-size: 28px; margin-bottom: 8px; }
+        .upload-text { color: #888; font-size: 13px; }
+        
+        /* Table */
+        .table-wrapper {
+            overflow-x: auto;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            font-size: 13px;
+        }
+        th, td {
+            padding: 10px 8px;
+            text-align: left;
+            border-bottom: 1px solid #eee;
+        }
+        th {
+            background: #f8f6ff;
+            color: #667eea;
+            font-weight: 600;
+        }
+        tr:hover { background: #fafafa; }
+        
+        .col-seq { width: 50px; text-align: center; }
+        .col-name { width: 80px; }
+        .col-company { }
+        .col-seat { width: 90px; }
+        .col-actions { width: 100px; text-align: center; }
+        
+        .action-btn {
+            padding: 4px 10px;
+            font-size: 12px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            margin: 0 2px;
+        }
+        .action-btn.edit {
+            background: #3498db;
+            color: #fff;
+        }
+        .action-btn.delete {
+            background: #e74c3c;
+            color: #fff;
+        }
+        
+        /* Pagination */
+        .pagination {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 8px;
+            margin-top: 16px;
+            padding-top: 16px;
+            border-top: 1px solid #eee;
+        }
+        .pagination button {
+            padding: 6px 12px;
+            font-size: 13px;
+            border: 1px solid #ddd;
+            background: #fff;
+            border-radius: 6px;
+            cursor: pointer;
+        }
+        .pagination button:hover:not(:disabled) {
+            background: #667eea;
+            color: #fff;
+            border-color: #667eea;
+        }
+        .pagination button:disabled {
+            opacity: 0.4;
+            cursor: not-allowed;
+        }
+        .pagination .page-info {
+            font-size: 13px;
+            color: #888;
+        }
+        
+        .search-bar {
+            margin-bottom: 12px;
+        }
+        .search-bar input {
+            width: 100%;
+            padding: 10px 14px;
+            font-size: 14px;
+            border: 1px solid #e0e0e0;
+            border-radius: 8px;
+            outline: none;
+        }
+        .search-bar input:focus { border-color: #667eea; }
+        
+        .empty {
+            text-align: center;
+            padding: 30px;
+            color: #888;
+        }
+        
+        .message {
+            position: fixed;
+            bottom: 20px;
+            left: 50%;
+            transform: translateX(-50%);
+            background: #333;
+            color: #fff;
+            padding: 10px 20px;
+            border-radius: 8px;
+            font-size: 14px;
+            opacity: 0;
+            transition: opacity 0.3s;
+            z-index: 1000;
+        }
+        .message.show { opacity: 1; }
+        .message.success { background: #27ae60; }
+        .message.error { background: #e74c3c; }
+        
+        /* Edit Modal */
+        .modal {
+            display: none;
+            position: fixed;
+            top: 0; left: 0; right: 0; bottom: 0;
+            background: rgba(0,0,0,0.5);
+            justify-content: center;
+            align-items: center;
+            z-index: 1000;
+            padding: 20px;
+        }
+        .modal.active { display: flex; }
+        .modal-content {
+            background: #fff;
+            border-radius: 16px;
+            padding: 24px;
+            width: 100%;
+            max-width: 400px;
+        }
+        .modal-title {
+            font-size: 16px;
+            color: #333;
+            margin-bottom: 16px;
+            font-weight: 600;
+        }
+        .modal .btn-row {
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>🗂️ 座位管理</h1>
+        
+        <!-- Add New Entry -->
+        <div class="card">
+            <div class="card-title">➕ 添加嘉宾</div>
+            <div class="form-row">
+                <div class="form-group">
+                    <label>姓名</label>
+                    <input type="text" id="inputName" placeholder="姓名">
+                </div>
+                <div class="form-group" style="flex:2">
+                    <label>公司</label>
+                    <input type="text" id="inputCompany" placeholder="公司名称">
+                </div>
+            </div>
+            <div class="form-row">
+                <div class="form-group">
+                    <label>区域</label>
+                    <select id="inputRowType">
+                        <option value="沙发">沙发</option>
+                        <option value="前区">前区</option>
+                        <option value="中区">中区</option>
+                        <option value="后区">后区</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label>排</label>
+                    <select id="inputRow"></select>
+                </div>
+                <div class="form-group">
+                    <label>座</label>
+                    <select id="inputSeat"></select>
+                </div>
+            </div>
+            <div class="btn-row">
+                <button class="btn btn-primary" onclick="addEntry()">添加</button>
+                <button class="btn btn-secondary" onclick="clearForm()">清空</button>
+            </div>
+        </div>
+        
+        <!-- Import from Excel -->
+        <div class="card">
+            <div class="card-title">📁 批量导入</div>
+            <div class="upload-area" onclick="document.getElementById('fileInput').click()">
+                <div class="upload-icon">📤</div>
+                <div class="upload-text">点击选择Excel文件（.xlsx/.xls）</div>
+                <input type="file" id="fileInput" accept=".xlsx,.xls" onchange="importExcel(event)">
+            </div>
+        </div>
+        
+        <!-- Data List -->
+        <div class="card">
+            <div class="card-title">📋 嘉宾列表</div>
+            <div class="search-bar">
+                <input type="text" id="searchInput" placeholder="搜索姓名或公司..." oninput="searchData()">
+            </div>
+            <div class="table-wrapper">
+                <table>
+                    <thead>
+                        <tr>
+                            <th class="col-seq">序号</th>
+                            <th class="col-name">姓名</th>
+                            <th class="col-company">公司</th>
+                            <th class="col-seat">位置</th>
+                            <th class="col-actions">操作</th>
+                        </tr>
+                    </thead>
+                    <tbody id="listBody"></tbody>
+                </table>
+            </div>
+            <div class="pagination">
+                <button id="prevBtn" onclick="prevPage()">上一页</button>
+                <span class="page-info" id="pageInfo">1 / 1</span>
+                <button id="nextBtn" onclick="nextPage()">下一页</button>
+            </div>
+        </div>
+    </div>
+    
+    <!-- Edit Modal -->
+    <div class="modal" id="editModal">
+        <div class="modal-content">
+            <div class="modal-title">✏️ 编辑嘉宾</div>
+            <input type="hidden" id="editId">
+            <div class="form-group">
+                <label>姓名</label>
+                <input type="text" id="editName">
+            </div>
+            <div class="form-group">
+                <label>公司</label>
+                <input type="text" id="editCompany">
+            </div>
+            <div class="form-row">
+                <div class="form-group">
+                    <label>区域</label>
+                    <select id="editRowType">
+                        <option value="沙发">沙发</option>
+                        <option value="前区">前区</option>
+                        <option value="中区">中区</option>
+                        <option value="后区">后区</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label>排</label>
+                    <select id="editRow"></select>
+                </div>
+                <div class="form-group">
+                    <label>座</label>
+                    <select id="editSeat"></select>
+                </div>
+            </div>
+            <div class="btn-row">
+                <button class="btn btn-primary" onclick="saveEdit()">保存</button>
+                <button class="btn btn-secondary" onclick="closeModal()">取消</button>
+            </div>
+        </div>
+    </div>
+    
+    <div class="message" id="message"></div>
+
+    <script src="https://cdn.jsdelivr.net/npm/xlsx@0.18.5/dist/xlsx.full.min.js"></script>
+    <script>
+        let seatsData = [];
+        let filteredData = [];
+        let currentPage = 1;
+        const pageSize = 10;
+        let editRowSelect, editSeatSelect;
+        
+        function initSelects() {
+            const rowSelect = document.getElementById('inputRow');
+            const seatSelect = document.getElementById('inputSeat');
+            editRowSelect = document.getElementById('editRow');
+            editSeatSelect = document.getElementById('editSeat');
+            
+            for (let i = 1; i <= 20; i++) {
+                rowSelect.innerHTML += `<option value="${i}">${i}排</option>`;
+                editRowSelect.innerHTML += `<option value="${i}">${i}排</option>`;
+            }
+            for (let i = 1; i <= 30; i++) {
+                seatSelect.innerHTML += `<option value="${i}">${i}座</option>`;
+                editSeatSelect.innerHTML += `<option value="${i}">${i}座</option>`;
+            }
+        }
+        
+        function loadData() {
+            fetch('seats.json')
+                .then(r => r.json())
+                .then(d => {
+                    seatsData = d.seats || [];
+                    filteredData = [...seatsData];
+                    goToPage(1);
+                })
+                .catch(() => {
+                    seatsData = [];
+                    filteredData = [];
+                    renderList();
+                });
+        }
+        
+        function saveData() {
+            const data = {
+                total: seatsData.length,
+                seats: seatsData,
+                nameIndex: buildNameIndex()
+            };
+            localStorage.setItem('seats_backup', JSON.stringify(data));
+            
+            // Auto-upload to GitHub
+            uploadToGithub(data);
+        }
+        
+        function uploadToGithub(data) {
+            // Auto-upload to GitHub - requires manual token setup
+            // This function is disabled until a valid token is provided
+            console.log('Data would be uploaded to GitHub');
+        }
+        
+        function buildNameIndex() {
+            const index = {};
+            seatsData.forEach((seat, idx) => {
+                const key = seat.name.trim();
+                if (!index[key]) index[key] = [];
+                index[key].push(idx);
+            });
+            return index;
+        }
+        
+        function addEntry() {
+            const name = document.getElementById('inputName').value.trim();
+            const company = document.getElementById('inputCompany').value.trim();
+            const rowType = document.getElementById('inputRowType').value;
+            const row = document.getElementById('inputRow').value;
+            const seat = document.getElementById('inputSeat').value;
+            
+            if (!name) { showMessage('请输入姓名', 'error'); return; }
+            if (!company) { showMessage('请输入公司', 'error'); return; }
+            if (!row || !seat) { showMessage('请选择座位', 'error'); return; }
+            
+            const seatRaw = rowType + row + '排' + seat + '座';
+            
+            const newEntry = {
+                id: Date.now(),
+                name: name,
+                company: company,
+                seatRaw: seatRaw,
+                rowType: rowType,
+                row: parseInt(row),
+                seat: parseInt(seat)
+            };
+            
+            seatsData.push(newEntry);
+            filteredData = [...seatsData];
+            saveData();
+            clearForm();
+            goToPage(Math.ceil(filteredData.length / pageSize));
+            showMessage('添加成功！', 'success');
+        }
+        
+        function clearForm() {
+            document.getElementById('inputName').value = '';
+            document.getElementById('inputCompany').value = '';
+            document.getElementById('inputRow').value = '';
+            document.getElementById('inputSeat').value = '';
+        }
+        
+        function searchData() {
+            const keyword = document.getElementById('searchInput').value.trim().toLowerCase();
+            if (!keyword) {
+                filteredData = [...seatsData];
+            } else {
+                filteredData = seatsData.filter(s => 
+                    s.name.toLowerCase().includes(keyword) || 
+                    s.company.toLowerCase().includes(keyword)
+                );
+            }
+            goToPage(1);
+        }
+        
+        function goToPage(page) {
+            const totalPages = Math.max(1, Math.ceil(filteredData.length / pageSize));
+            currentPage = Math.min(Math.max(1, page), totalPages);
+            
+            document.getElementById('pageInfo').textContent = `${currentPage} / ${totalPages}`;
+            document.getElementById('prevBtn').disabled = currentPage === 1;
+            document.getElementById('nextBtn').disabled = currentPage === totalPages;
+            
+            const start = (currentPage - 1) * pageSize;
+            const pageData = filteredData.slice(start, start + pageSize);
+            
+            renderList(pageData, start);
+        }
+        
+        function prevPage() { goToPage(currentPage - 1); }
+        function nextPage() { goToPage(currentPage + 1); }
+        
+        function renderList(pageData, startIdx) {
+            const tbody = document.getElementById('listBody');
+            pageData = pageData || filteredData.slice(0, pageSize);
+            startIdx = startIdx || 0;
+            
+            if (pageData.length === 0) {
+                tbody.innerHTML = '<tr><td colspan="5"><div class="empty">暂无数据</div></td></tr>';
+                return;
+            }
+            
+            tbody.innerHTML = pageData.map((seat, idx) => `
+                <tr>
+                    <td class="col-seq">${startIdx + idx + 1}</td>
+                    <td class="col-name">${escapeHtml(seat.name)}</td>
+                    <td class="col-company">${escapeHtml(seat.company)}</td>
+                    <td class="col-seat">${seat.seatRaw}</td>
+                    <td class="col-actions">
+                        <button class="action-btn edit" onclick="editEntry(${seatsData.indexOf(seat)})">编辑</button>
+                        <button class="action-btn delete" onclick="deleteEntry(${seatsData.indexOf(seat)})">删除</button>
+                    </td>
+                </tr>
+            `).join('');
+        }
+        
+        function editEntry(idx) {
+            const seat = seatsData[idx];
+            document.getElementById('editId').value = idx;
+            document.getElementById('editName').value = seat.name;
+            document.getElementById('editCompany').value = seat.company;
+            document.getElementById('editRowType').value = seat.rowType;
+            
+            // Set row and seat
+            const rowMatch = seat.seatRaw.match(/(\d+)排/);
+            const seatMatch = seat.seatRaw.match(/(\d+)座/);
+            document.getElementById('editRow').value = rowMatch ? rowMatch[1] : '';
+            document.getElementById('editSeat').value = seatMatch ? seatMatch[1] : '';
+            
+            document.getElementById('editModal').classList.add('active');
+        }
+        
+        function saveEdit() {
+            const idx = parseInt(document.getElementById('editId').value);
+            const name = document.getElementById('editName').value.trim();
+            const company = document.getElementById('editCompany').value.trim();
+            const rowType = document.getElementById('editRowType').value;
+            const row = document.getElementById('editRow').value;
+            const seat = document.getElementById('editSeat').value;
+            
+            if (!name || !company || !row || !seat) {
+                showMessage('请填写完整信息', 'error');
+                return;
+            }
+            
+            seatsData[idx].name = name;
+            seatsData[idx].company = company;
+            seatsData[idx].rowType = rowType;
+            seatsData[idx].row = parseInt(row);
+            seatsData[idx].seat = parseInt(seat);
+            seatsData[idx].seatRaw = rowType + row + '排' + seat + '座';
+            
+            filteredData = [...seatsData];
+            saveData();
+            closeModal();
+            goToPage(currentPage);
+            showMessage('修改成功！', 'success');
+        }
+        
+        function deleteEntry(idx) {
+            if (!confirm('确定要删除 ' + seatsData[idx].name + ' 吗？')) return;
+            seatsData.splice(idx, 1);
+            filteredData = [...seatsData];
+            saveData();
+            
+            const totalPages = Math.ceil(filteredData.length / pageSize);
+            if (currentPage > totalPages) currentPage = totalPages;
+            goToPage(currentPage);
+            showMessage('已删除', 'success');
+        }
+        
+        function closeModal() {
+            document.getElementById('editModal').classList.remove('active');
+        }
+        
+        function importExcel(event) {
+            const file = event.target.files[0];
+            if (!file) return;
+            
+            const reader = new FileReader();
+            reader.onload = e => {
+                try {
+                    const data = new Uint8Array(e.target.result);
+                    const workbook = XLSX.read(data, { type: 'array' });
+                    const sheet = workbook.Sheets[workbook.SheetNames[0]];
+                    const rows = XLSX.utils.sheet_to_json(sheet, { header: 1 });
+                    
+                    const newSeats = rows.slice(1).map((row, idx) => {
+                        const seatStr = row[2] || '';
+                        const match = seatStr.match(/^(.+?)(\d+)排(\d+)座$/);
+                        return {
+                            id: Date.now() + idx,
+                            name: row[0] || '',
+                            company: row[1] || '',
+                            seatRaw: seatStr,
+                            rowType: match ? match[1] : '',
+                            row: match ? parseInt(match[2]) : 0,
+                            seat: match ? parseInt(match[3]) : 0
+                        };
+                    }).filter(s => s.name && s.seatRaw);
+                    
+                    seatsData = [...seatsData, ...newSeats];
+                    filteredData = [...seatsData];
+                    saveData();
+                    goToPage(1);
+                    showMessage(`成功导入 ${newSeats.length} 条记录`, 'success');
+                } catch (err) {
+                    showMessage('导入失败', 'error');
+                }
+            };
+            reader.readAsArrayBuffer(file);
+            event.target.value = '';
+        }
+        
+        function showMessage(text, type = '') {
+            const msg = document.getElementById('message');
+            msg.textContent = text;
+            msg.className = 'message show ' + type;
+            setTimeout(() => msg.className = 'message', 2500);
+        }
+        
+        function escapeHtml(str) {
+            const div = document.createElement('div');
+            div.textContent = str;
+            return div.innerHTML;
+        }
+        
+        initSelects();
+        loadData();
+    </script>
+</body>
+</html>
